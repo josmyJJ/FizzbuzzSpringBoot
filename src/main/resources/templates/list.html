@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr th:each="fizzB : ${outputs}">
+            <td th:text="${fizzB}"></td>
+
+        </tr>
+    </table>
+
+    <a href="/">PLAY GAIN!</a>
+</body>
+</html>

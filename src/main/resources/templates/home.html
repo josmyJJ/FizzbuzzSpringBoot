@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#"
+        th:action="@{/process}"
+        th:object="${fizzBuzz}"
+        method="post">
+    Start Number : <input type="number" th:field="*{startNum}" /><br/>
+
+    End Number : <input type="number" th:field="*{endNum}" /><br/>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
